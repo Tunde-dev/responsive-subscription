@@ -80,6 +80,111 @@ li {
     width: 100%;
     cursor: pointer;
 }
+img {
+    width: 20px;
+}
+.modal {
+    display: block;
+    //media query
+    width: 600px;
+    max-width: 100%;
+    
+    @media (min-width: 760px) {
+        width: 700px;
+        border-radius: 15px;
+    }
+    @media (min-width: 960px) {
+        width: 900px;
+    }
+    @media (min-width: 1260px) {
+        width: 1000px;
+    }
 
+    height: 100vh;
+    
+
+    @media (min-height: 700px) {
+        height: 700px;
+        max-height: 100%;
+    }
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:   white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+.closed {
+    display: none;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    
+    background: rgba(35, 149, 147, 0.6);
+}
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+}
+.modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.form-title {
+    text-align: center;
+    margin-top: 60px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+
+    input{
+        height: 40px;
+        border-radius: 7px;
+        border: 1px solid #ced4da;
+        font-size: 1em;
+
+        &:focus {
+            outline: 1px solid hsl(179, 62%, 43%);
+            outline-style: auto;
+        }
+    }
+
+    button {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color:  #ebffff;
+        height: 50px;
+        font-size: 1em;
+        background-color: hsl(179, 62%, 43%);
+        padding: 15px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 7px;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+
+    }
+}
 
 
