@@ -1,1 +1,124 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.intro {
+  background-color: white;
+}
+
+.subscription > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .bottom-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bottom-wrapper > div {
+    width: 50%;
+  }
+}
+
+.white {
+  color: #ebffff;
+}
+
+.cyan {
+  background-color: #2ab2af;
+}
+
+.light-cyan {
+  background-color: #4abebd;
+}
+
+.p-1 {
+  padding: 2em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: #ebffff;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ebffff;
+  background-color: #c0df34;
+  padding: 15px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=App.css.map */
